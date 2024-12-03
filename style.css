@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.container{
+    width:90%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-color{
+    color: #d61212;
+}
+h3{
+    font-family: 'Amatic SC', sans-serif;
+}
+span{
+    color: #d61212;
+}
+
+
+
+
+/* START      NAV      SECTION */
+
+.nav{
+    background-color: white;
+    padding: 15px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav ul{
+    width: 30%;
+    display:flex ;
+    justify-content: space-around;
+    list-style-type:none ;
+}
+
+.nav ul a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+
+}
+
+/* END      NAV      SECTION */
+
+
+
+/* START      HOME      SECTION */
+
+.home{
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    padding: 100px 0;
+    margin-bottom: 100px;
+}
+.content{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.content h3{
+    font-size: 65px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color:#37373F;
+}
+.content .first{
+    padding-bottom: 20px;
+    color: rgb(90, 89, 89);
+}
+.content button{
+    margin-right: 20px;
+    padding: 10px 15px;
+    background-color: #d61212;
+    color: white;
+    font-size: 16px;
+    border:none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+.youtube .btn{
+    background-color: transparent;
+    color: #37373F;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.btn p{
+    margin: 0;
+}
+
+
+#home .youtube i{
+    /* padding-right: 10px; */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #37373F;
+    cursor: pointer;
+    font-size:25px ;
+   /* position: relative;
+    z-index: 100; */
+}
+
+/* #home .youtube i::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+} */
+
+.content video:hover{
+    background-color: rgb(245, 5, 5);
+}
+.plate{
+    width:40%;
+}
+.plate:hover img{
+    /* top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px; */
+    position: relative;
+    animation: move 1s infinite;
+}
+.plate img{
+    width: 100%;
+}
+
+@keyframes move {
+/*     
+    0%{top: 0px}
+    15%{top:3px}
+    30%{bottom:0px}
+    45%{bottom:3px}
+    60%{left:0} 
+    75%{left:3px}
+    90%{right:0px}
+    100%{right:3px}  */
+
+
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);}
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);}
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);}
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);}
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);}
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);}
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);}
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);}
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);}
+
+    /* from {top: 0px;}
+    to {top: 1px;};
+    from {bottom: 0px;}
+    to {bottom: 5px;};
+    from {top: 0px;}
+    to {top: 200px;}
+    from {top: 0px;}
+    to {top: 200px;}   */
+}
+
+
+
+/* END      HOME      SECTION */
+
+
+
+/* START      CHEFS      SECTION */
+
+.chefs{
+    text-align: center;
+}
+.chefs-images{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    width: 33.33333%;
+    padding: 10px ;
+    margin-bottom: 100px;
+    border: none;
+}
+.item:hover .inner{
+    transform: scale(1.1);
+}
+.item h4{
+    color: black;
+}
+.chefs h3{
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    color:#37373F;
+}
+.chefs-images img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.inner .layer{
+    position: absolute;
+    left: 110%;
+    top: 15;
+    width: 50px;
+    height: 150px;
+    background-color:whitesmoke;
+    border-radius: 3px;
+    transition: all 1s;
+}
+.inner:hover .layer{
+    left:82%;
+    opacity: 1;
+}
+.inner .layer a{
+    text-decoration: none;
+    color: #42424b;
+    padding: 10px;
+}
+.inner{
+    background-color: white;
+    position: relative;
+    transition: all 1s;
+    
+}
+.inner .wave{
+    position: absolute;
+    bottom: 30%;
+}
+.inner h4{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.inner p{
+    padding-bottom: 10px;
+}
+.inner .p2 {
+    padding-bottom: 20px;
+}
+
+/* END      CHEFS      SECTION */
+
+
+/* START      GALLERY      SECTION */
+
+.gallery{
+    background-color: #EEEEEE;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.gallery h3{
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    color:#37373F;
+}
+.gallery{
+    padding: 100px 0;
+}
+.gallery-images{
+    display: flex;
+    gap: 20px;
+
+}
+.meals{
+    display: flex;
+    flex-direction: column;
+}
+.meal{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.meal img{
+    width: 100%;
+    border: 5px white solid;
+    transition: all 1s;
+}
+.meal:hover img{
+    transform:scale(1.2);
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: all 1s;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.meal .layer p, h4{
+    color: white;
+    text-align: center;
+}
+.meal:hover .layer{
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
+
+
+/* END      GALEERY      SECTION */
+
+
+/* START      CONTACT      SECTION */
+
+.contact{
+    text-align: center;
+}
+
+.contact h3{
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    color:#37373F;
+}
+
+.contact p{
+    padding-bottom: 20px;
+    color: rgb(90, 89, 89);
+}
+.map{
+    width: 100%;
+    height:350px;
+    margin-bottom: 20px;
+}
+.all-data{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+}
+.data{
+    background-color: rgb(238, 238, 238);
+    width: 49%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+ .data .icon{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+} 
+.data i{
+    background-color: #d61212;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.data-info{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+.data h4{
+    padding: 0;
+    font-size: 20px;
+    color: gray;
+    text-align: left;
+ }
+.data p{
+    padding: 0;
+    color:#37373F;
+    text-align: left;
+}
+
+/* end      CONTACT      SECTION */
+
+
+
+/* START      FORM      SECTION */
+
+.form{
+    background-color: white;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container2{
+    width: 95%;
+    margin: auto;
+}
+
+.app{
+    width: 100%;
+    margin: 10px 0;   
+}
+.app input, textarea{
+    padding: 20px;
+    width: 100%;
+    border: 2px solid  rgb(238, 238, 238);
+}
+.both {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row; 
+}
+.app2{
+    margin-left: 20px;
+}
+textarea{
+    color:gray;
+    margin: 10px 0;
+    height: 150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form .send{
+    background-color: #d61212;
+    color: white;
+    padding: 18px 50px;
+    border:none;
+    border-radius: 25px;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+}
+.form .send:hover{
+    background-color: rgb(245, 5, 5);
+}
+/* END      FORM      SECTION */
+
+
+/* START      FOOTER      SECTION */
+
+footer{
+    background-image: url(images/img/textured-metal-background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+}
+.mealify{
+    width: 25%;
+}
+
+/* l o g o */
+
+.group{
+    display: flex;
+    justify-content: space-between;    
+}
+.mealify h4{
+    font-size: 30px;
+}
+footer .logo{
+     display: flex;
+     align-items: center;
+}
+.mealify img{
+    width: 18%;
+    background-size: cover;
+    padding: 10px 10px 10px 0;
+}
+.mealify p{
+    margin-bottom: 10px;
+}
+.mealify h5{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.mealify hr{
+    background-color: rgb(80, 79, 79);
+    height: 2px;
+    color: rgb(80, 79, 79);
+    border: none;
+}
+.mealify i{
+    font-size: 25px;
+    padding: 18px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+/* s u b */
+
+.sub{
+    width: 48%;
+}
+.sub h5, p, input, button{
+    margin-bottom: 15px;
+}
+.sub h5{
+    font-size: 20px;
+}
+.sub input{
+    width: 78%;
+    padding: 10px;
+    border: none;
+}
+.sub button{
+    width: 20%;
+    padding: 10px;
+    background-color: #d61212;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+.sub i{
+    color: white;
+    padding-right: 7px;
+    font-size: 15px;
+}
+.sub ul{
+    list-style-type: none;
+    display: flex;
+
+}
+.sub li{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.column1{
+    padding-right: 15%;
+}
+.hov a{
+    text-decoration: none;
+    color: white;
+}
+.hov{
+    width: 200px;
+    height: 30px;
+    transition: all 0.5s;
+}
+.hov:hover {
+    translate:10px ;
+    background-color: #37373F;
+}
+
+/* g e t */
+
+.get{
+    width: 25%;
+}
+.get h5{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+} 
+.info i{
+    font-size: 22px;
+    padding-right:10px ;
+}
+.info a{
+    text-decoration: none;
+    color: white;
+}
+.info .p-top{
+    padding-top: 8px;
+}
+
+/* END      FOOTER      SECTION */
+

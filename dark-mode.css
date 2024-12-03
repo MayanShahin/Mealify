@@ -1,0 +1,37 @@
+
+
+.light{
+    visibility: hidden;
+}
+
+.dark-mode i{
+    color:#171717;
+    font-size: 25px;
+    cursor: pointer;
+}
+:root:has(.mode:checked){
+    --black: #171717;
+    --light: #fff;
+    --second-color: #fff;
+    --third-color: #D7BC23;
+    --bg-color: #252525;
+}
+:root:has(.mode:checked) *{
+    color: var(--light);
+}
+:root:has(.mode:checked) span{
+    color: #D7BC23;
+}
+:root:has(.mode:checked) .mode .light {
+    display: block;
+    color: #fff;
+}
+:root:has(.mode:checked) .chefs {
+    background-color: #202020;
+}
+:root:has(.mode:checked) .gallery{
+    background-color: var(--black);
+}
+:root:has(.mode:checked) .mode .dark {
+    display: none;
+}

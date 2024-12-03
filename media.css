@@ -1,0 +1,169 @@
+
+
+
+
+@media screen and (min-width:0) and (max-width:1030px) {
+    .nav ul{
+        flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (max-width:992px){
+    .nav .d-flex{
+        flex-direction: row;
+        
+    }
+    .home{
+        height: auto;
+    }
+    .home .d-flex {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column-reverse;
+       align-items: center;
+       text-align: center;
+    }
+    .plate  {
+        width: 80%;
+        padding-top: 100px ;
+    }
+    
+    .content{
+        width: 80%;
+    }
+  
+}
+
+@media screen and (max-width:768px) {
+    .chefs-images{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 80%;
+        margin: auto;
+    }
+
+
+    .gallery-images{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .meals{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .meal{
+        width: 100%;
+    }
+
+    .group{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mealify, .sub, .get {
+        width: 100%;
+    }
+
+    .all-data{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .all-data .data{
+        width: auto;
+    }
+    .form{
+        padding-bottom: 20px;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .both{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .both .app2{
+        margin: 0;
+    }
+    .app{
+        width: 100%;
+    }
+    .form button{
+        height: 40px;
+        padding-bottom: 2px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .chefs-images{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .item{
+        width: 45%;
+        margin: 0;
+    }
+    .item .margin{
+        margin-bottom: 100px;
+    }
+
+    .gallery-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .meals{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .meal{
+        width: 100%;
+    }
+    
+   
+}
+
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+    .chefs-images{
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+    }
+    .item{
+        width: 33.333%;
+        margin: 0;
+    }
+     .margin .inner .p2{
+        padding: 0;
+    }
+
+    footer .group{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .mealify, .get{
+        width:40%;
+    }
+    .sub{
+        width: 100%;
+    }
+}
